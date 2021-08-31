@@ -1,1 +1,123 @@
+<div class="header">
+  <a href="#default" class="logo">
+    <img src="/assets/img/app/logo.jpeg" alt="" width="60" height="60" class="d-inline-block align-text-top">
+  </a>
+  <div class="header-left">
+    <div class="input-group">
+      <input type="text" class="form-control header-input-search" placeholder="¿Qué productos necesitas?"
+        aria-label="Buscar" aria-describedby="basic-addon2">
+      <span class="input-group-text" id="basic-addon2"><i class="bi bi-search"></i></span>
+    </div>
+  </div>
+  <div class="header-right">
+    <a class="" href="#"><i class="bi bi-bag"></i></a>
+    <a class="" href="#"><i class="bi bi-person"></i></a>
+  </div>
+</div>
+<div style="height: 2px;">
+
+</div>
+<nav class="navbar navbar-expand-lg navbar-light navbar-custom" aria-label="Twelfth navbar example">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample10"
+      aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">HOME</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" id="dropdown10" data-bs-toggle="dropdown"
+            aria-expanded="false">CATEGORIAS</a>
+          <ul class="dropdown-menu" aria-labelledby="dropdown10">
+            <li><a class="dropdown-item" href="#">Chifles</a></li>
+            <li><a class="dropdown-item" href="#">Chicharrones</a></li>
+            <li><a class="dropdown-item" href="#">Habas</a></li>
+            <li><a class="dropdown-item" href="#">Maní</a></li>
+            <li><a class="dropdown-item" href="#">Papas</a></li>
+            <li><a class="dropdown-item" href="#">Camotes</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">CATALOGO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">OFERTAS</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" href="#">CONTACTO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">SOBRE NOSOTROS</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
 <router-outlet></router-outlet>
+
+
+
+<footer>
+  <div class="row">
+    <div class="col-3">
+      <img src="/assets/img/app/logo-footer.jpeg" alt="" width="120" height="120" class="">
+      <div class="social-links social-1 col-6">
+        <a href=""><i class="fab fa-facebook-f"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-linkedin-in"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="link-cat">
+        <span class="footer-cat">Categorias</span>
+      </div>
+      <ul class="footer-cat-links">
+        <li><a href=""><span>Chifles</span></a></li>
+        <li><a href=""><span>Chicharrones</span></a></li>
+        <li><a href=""><span>Habas</span></a></li>
+        <li><a href=""><span>Maní</span></a></li>
+        <li><a href=""><span>Papas</span></a></li>
+        <li><a href=""><span>Camotes</span></a></li>
+      </ul>
+    </div>
+    <div class="col-3">
+      <div class="link-cat">
+       
+        <span class="footer-cat">Información</span>
+      </div>
+      <ul class="footer-cat-links">
+        <li><a href=""><span>Sobre nosotros</span></a></li>
+        <li><a href=""><span>Envios y devoluciones</span></a></li>
+        <li><a href=""><span>Consultas y sugerencias</span></a></li>
+      </ul>
+    </div>
+    <div class="col-3" id="newsletter">
+      <span>Boletín SNACK MICHEL</span>
+
+      <p>Registrate para enviarte las ultimas ofertas y novedades.</p>
+      <form id="subscribe">
+        <input type="text" id="subscriber-name" placeholder="Nombre y Apellido" />
+        <br><br>
+        <input type="email" id="subscriber-email" placeholder="Ingresa tu email" />
+
+        <input type="submit" value="Suscribirse" id="btn-scribe" />
+      </form>
+    </div>
+  </div>
+  <div id="copyright">
+    &copy; Todos los derechos reservados 2021
+  </div>
+  <div id="owner">
+    <span>
+      Diseñado por <a href="#">Grupo 5</a>
+    </span>
+  </div>
+</footer>
