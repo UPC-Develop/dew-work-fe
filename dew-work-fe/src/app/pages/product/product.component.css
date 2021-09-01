@@ -1,0 +1,63 @@
+.number-input{
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+.quantity{
+    max-width: 3rem;
+    padding: .5rem;
+    border: 1px solid #ced4da;
+    border-width: 0 1px;
+    font-size: 1rem;
+    height: 2rem;
+    color: #495057;
+}
+button.minus,
+button.plus{
+    background-color: transparent;
+    border: 0;
+}
+.custom-control{
+    position: relative;
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 1.5rem;
+}
+.custom-control-input{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+
+}
+.custom-control-label{
+    margin-bottom: 0;
+}
+.custom-checkbox .custom-control-label::before{
+    border-radius: .25rem;
+}
+.custom-control-label::before{
+    position: absolute;
+    top: .25rem;
+    left: 0;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    pointer-events: none;
+    content: "";
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #dee2e6;
+}
+.custom-control-label::after{
+    position:absolute;
+    top: .25rem;
+    left: 0;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
