@@ -387,5 +387,6 @@ input#subscriber-name::placeholder {
 
 .navbar-custom{
     background-color: #8FA31B;
+    font-weight: bold;
 }
 
