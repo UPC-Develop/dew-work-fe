@@ -1,0 +1,11 @@
+.card-product{
+    background-color: #bac854;
+    padding: 1rem 2rem 0rem 2rem;
+}
+.card-body{
+    padding-left: 0;
+    padding-right: 0;
+}
+.card-button{
+    background-color: black;
+}
