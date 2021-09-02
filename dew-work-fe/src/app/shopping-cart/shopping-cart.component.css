@@ -1,0 +1,15 @@
+.title {
+    font-weight: 300;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    color: #333;
+    padding-left: 50px;
+}
+
+.title-count {
+    color: #bbb;
+    font-weight: 300;
+    font-size: 2.4rem;
+    line-height: 2.1rem;
+   
+}
