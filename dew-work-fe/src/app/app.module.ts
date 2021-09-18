@@ -2,25 +2,25 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { ContactoComponent } from './contacto/contacto.component';
+import { ContactComponent } from './pages/contact/contact.component';
 import { AppRoutingModule } from './core/app.routing.module';
-import { InicioComponent } from './inicio/inicio.component';
-import { LoginComponent } from './login/login.component';
+import { homeComponent } from './pages/home/home.component';
+import { LoginComponent } from './pages/login/login.component';
 import { AboutusComponent } from './pages/aboutus/aboutus.component';
-import { CatalogoComponent } from './pages/catalogo/catalogo.component';
-import { OfertaComponent } from './pages/oferta/oferta.component';
+import { CatalogueComponent } from './pages/catalogue/catalogue.component';
+import { OfferComponent } from './pages/offer/offer.component';
 import { ProductComponent } from './pages/product/product.component';
-import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
+import { ShoppingCartComponent } from './pages/shopping-cart/shopping-cart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutusComponent,
-    CatalogoComponent,
-    OfertaComponent,
+    CatalogueComponent,
+    OfferComponent,
     ProductComponent,
-    InicioComponent,
-    ContactoComponent,
+    homeComponent,
+    ContactComponent,
     LoginComponent,
     ShoppingCartComponent
   ],
