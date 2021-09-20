@@ -11,6 +11,11 @@ import { CatalogueComponent } from './pages/catalogue/catalogue.component';
 import { OfferComponent } from './pages/offer/offer.component';
 import { ProductComponent } from './pages/product/product.component';
 import { ShoppingCartComponent } from './pages/shopping-cart/shopping-cart.component';
+import { CategoryComponent } from './pages/category/category.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {ToastrModule} from "ngx-toastr"
 
 @NgModule({
   declarations: [
@@ -22,12 +27,16 @@ import { ShoppingCartComponent } from './pages/shopping-cart/shopping-cart.compo
     homeComponent,
     ContactComponent,
     LoginComponent,
-    ShoppingCartComponent
+    ShoppingCartComponent,
+    CategoryComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
-
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

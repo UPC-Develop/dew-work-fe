@@ -33,7 +33,7 @@
           <a class="nav-link dropdown-toggle active" href="#" id="dropdown10" data-bs-toggle="dropdown"
             aria-expanded="false">CATEGORIAS</a>
           <ul class="dropdown-menu" aria-labelledby="dropdown10">
-            <li><a class="dropdown-item" href="#">Chifles</a></li>
+            <li><a class="dropdown-item" routerLink="category/3">Chifles</a></li>
             <li><a class="dropdown-item" href="#">Chicharrones</a></li>
             <li><a class="dropdown-item" href="#">Habas</a></li>
             <li><a class="dropdown-item" href="#">Maní</a></li>
@@ -103,12 +103,14 @@
       <span>Boletín SNACK MICHEL</span>
 
       <p>Registrate para enviarte las ultimas ofertas y novedades.</p>
-      <form id="subscribe">
-        <input type="text" id="subscriber-name" placeholder="Nombre y Apellido" />
+      <form novalidate #form="ngForm" (submit)="onSubmit(form)" id="subscribe">
+        <input type="text" id="subscriber-name" name="fullName" #fullName="ngModel" 
+        [(ngModel)]="service.formData.fullName" placeholder="Nombre y Apellido" required minlength="5" />
         <br><br>
-        <input type="email" id="subscriber-email" placeholder="Ingresa tu email" />
+        <input type="email" id="subscriber-email" name="email" 
+        #email="ngModel" [(ngModel)]="service.formData.email" placeholder="Ingresa tu email" required min="5" />
 
-        <input type="submit" value="Suscribirse" id="btn-scribe" />
+        <input type="submit" value="Suscribirse" id="btn-scribe" [disabled]="form.invalid" />
       </form>
     </div>
   </div>

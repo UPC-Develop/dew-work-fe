@@ -9,6 +9,7 @@ import { CatalogueComponent } from '../pages/catalogue/catalogue.component';
 import { OfferComponent } from '../pages/offer/offer.component';
 import { ProductComponent } from '../pages/product/product.component';
 import { ShoppingCartComponent } from '../pages/shopping-cart/shopping-cart.component';
+import { CategoryComponent } from '../pages/category/category.component';
 
 const routes: Routes = [
   { path: 'home', component: homeComponent},
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'catalogue', component: CatalogueComponent },
   { path: 'offer', component: OfferComponent },
   { path: 'product/:id', component: ProductComponent },
+  { path: 'category/:categoryId', component: CategoryComponent },
   { path: 'login', component: LoginComponent },
   { path: 'shopping-cart', component: ShoppingCartComponent },
   { path: '**', redirectTo: '/home', pathMatch: 'full' }
