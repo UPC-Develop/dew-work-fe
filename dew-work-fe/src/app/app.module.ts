@@ -16,6 +16,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {ToastrModule} from "ngx-toastr"
+import { BuyProductComponent } from './pages/buy-product/buy-product.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import {ToastrModule} from "ngx-toastr"
     ContactComponent,
     LoginComponent,
     ShoppingCartComponent,
-    CategoryComponent
+    CategoryComponent,
+    BuyProductComponent
   ],
   imports: [
     BrowserModule,
