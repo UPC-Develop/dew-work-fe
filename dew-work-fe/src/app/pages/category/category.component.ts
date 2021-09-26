@@ -9,12 +9,15 @@ import { ActivatedRoute, Params } from '@angular/router';
 })
 export class CategoryComponent implements OnInit {
 
-  category = [];
+  category: any = [];
 
   constructor(private readonly ps: CategoryService, private ar: ActivatedRoute) { }
 
   _getProductByCategoryId(categoryId: number) {
-    this.ps._getProductByCategoryId().subscribe((rest: any) => {
+
+    const param = '?categoryId=' + categoryId;
+
+    this.ps._getProductByCategoryId(param).subscribe((rest: any) => {
       this.category = rest.data;
       console.log(this.category);
     })

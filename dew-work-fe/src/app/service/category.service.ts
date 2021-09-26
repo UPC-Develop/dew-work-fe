@@ -10,9 +10,7 @@ export class CategoryService {
 
 
   readonly baseURL = 'https://localhost:44312/api/product/getproductbycategoryid'
-
-
-  _getProductByCategoryId() {
-    return this.http.get(this.baseURL); 
+  _getProductByCategoryId(param: any) {
+    return this.http.get(this.baseURL + param); 
   }
 }
