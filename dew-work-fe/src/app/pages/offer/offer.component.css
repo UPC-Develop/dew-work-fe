@@ -1,0 +1,32 @@
+.jumbotron {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-bottom: 0;
+    background-color: #fff;
+}
+.jumbotron .container {
+    max-width: 40rem;
+}
+.jumbotron p:last-child {
+    margin-bottom: 0;
+}
+a.btn{
+    background-color: #0f5132;
+    color:#bac854;
+}
+
+@media (min-width: 768px){
+    .jumbotron {
+        padding-top: calc(3rem* 2);
+        padding-bottom: calc(3rem * 2);
+    }
+    .jumbotron .btn-secondary{
+        margin-left: 5px;
+    }
+}
+
+@media (min-width: 576px){
+    .jumbotron {
+        padding: 4rem 2rem;
+    }
+}

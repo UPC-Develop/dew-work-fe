@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { ContactComponent } from './pages/contact/contact.component';
@@ -18,6 +21,7 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {ToastrModule} from "ngx-toastr"
 import { BuyProductComponent } from './pages/buy-product/buy-product.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,10 +39,16 @@ import { BuyProductComponent } from './pages/buy-product/buy-product.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+<<<<<<< HEAD
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot()
+=======
+    HttpClientModule,
+    MatPaginatorModule,
+    BrowserAnimationsModule
+>>>>>>> 7ca610f830ad14b2a5446eac8f4ff71177575eda
   ],
   providers: [],
   bootstrap: [AppComponent]
