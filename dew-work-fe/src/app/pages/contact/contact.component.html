@@ -1,40 +1,73 @@
-<br>
-<div class="container">
-	<div class="row">
-		<div class="col-5" style="background-color: hsl(88, 60%, 57%);">
-            <div class="social-links social-1" style="padding-top: 10px; text-align: center;">
-                <label for=""><h1><b>PEDIDOS AL WHATSAPP</b></h1></label><br>
-                <a href="https://api.whatsapp.com/send?phone=980677925" ><b style="color: black;">980677925</b></a><br><br>
-                <img src="assets/img/ImagenDeli.PNG" alt="" width="200" height="250"><br><br>
-                <h3><b>DELIVERY Y PEDIDOS</b></h3>
-                <H3>Miércoles y Sábados</H3>
-                <a href=""><img src="assets/img/fb.png" alt="" width="75" height="100"></a>
-                <a href=""><img src="assets/img/ins.png" alt="" width="60" height="75"></a>
-                <H3>@Snack_Michel</H3>
-            </div>
-        </div>
-
-		<div class="col-5">
-            <form novalidate #form="ngForm" (submit)="onSubmit(form)" >
-            <div style="padding-top: 100px;">
-            <h2 style="padding-left: 80px;"><u>CONTACTANOS</u> </h2>
+<section class="contact" id="contact">
+    <div class="container" >
+        <div class="heading text-center">
+            <h2>CONTACTANOS</h2>
+            <br>                       
             <br>
-            <div class="form-group">
-                <label  >Correo:</label>
-                <input type="email" name="email" #email="ngModel" [(ngModel)]="service.formData.email"
-                 class="form-control" placeholder="Correo" style="width: 400px "  required min="5" >
-                <br>
-            </div>
-            <div class="form-group">
-                <label>Numero:</label>
-                <input type="text" name="phone" #phone="ngModel" [(ngModel)]="service.formData.phone"  class="form-control" placeholder="Numero" style="width: 400px;" >
-                <br>
-            </div>
-            <div class="form-group" style="text-align:right; width: 400px;">
-                <input type="submit" value="Enviar" id="btn-scribe" [disabled]="form.invalid" />
-            </div>
-            </div>
-        </form>
         </div>
-	</div>
-</div>
+        <div class="row">
+            
+            <div class="col-md-5">
+                <!--<div class="title">
+                    <h3>DETALLES DE CONTACTO</h3>
+                </div>-->
+                
+                <div class="content">
+                    <div class="imagelogo">
+                        <img src="assets/img/app/logo.jpeg" alt="" width="300" height="280" >
+                    </div>
+                    <!-- Info-1 -->
+                    
+                    <div class="info">
+                       <!--  <i class="fab fa-whatsapp "></i>
+                        <h4 class="d-inline-block">Whatsapp :-->
+                            <!-- <br>-->
+                            <a href="https://api.whatsapp.com/send?phone=980677925" target="_blank"> <i class="fab fa-whatsapp "></i>
+                                <!--<b style="color: black;">980677925</b>--></a>
+                           <!--  </h4>-->
+
+                    <!--    <i class="fab fa-facebook"></i>-->
+                       <!-- <h4 class="d-inline-block">Facebook :
+                           <!-- <br>-->
+                            <a href="https://www.facebook.com/SnackMichelPeru" target="_blank"> <i class="fab fa-facebook"></i>
+                                <!-- <b style="color: black;"> Snack Michel</b> --></a>
+                        <!--</h4>-->
+
+                        <!--<i class="fab fa-instagram"></i>
+                        <h4 class="d-inline-block">ADDRESS :<br>-->
+                            <a href="https://www.instagram.com/snack_michelperu/" target="_blank"><i class="fab fa-instagram"></i>
+                               <!-- <b style="color: black;">Snack_michelperu</b>-->
+                            </a>
+                       <!-- </h4>-->
+                    </div>
+                </div>
+            
+            </div>
+
+            <div class="col-md-6">
+                <form novalidate #form="ngForm" (submit)="onSubmit(form)">
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <input type="email" name="email" #email="ngModel" [(ngModel)]="service.formData.email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="col-sm-7">
+                            <input type="text" name="phone" #phone="ngModel" [(ngModel)]="service.formData.phone" class="form-control" placeholder="Celular">
+                        </div>                
+                       <!-- <div class="col-sm-12">
+                            <input type="text" class="form-control" placeholder="Subject">
+                        </div>
+                        -->               
+                    </div>
+                    <!--
+                    <div class="form-group">
+                        <textarea class="form-control" rows="5" id="comment" placeholder="Message"></textarea>
+                    </div>
+                    -->
+                    <div class="form-group">
+                        <button class="btn btn-block" type="submit" id="btn-scribe" [disabled]="form.invalid">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
