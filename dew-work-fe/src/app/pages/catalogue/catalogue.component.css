@@ -1,11 +1,44 @@
+::ng-deep .mat-paginator-page-size{
+    display: none !important;
+}
+
 .card-product{
-    background-color: #bac854;
-    padding: 1rem 2rem 0rem 2rem;
+    background-color: #fff;
 }
 .card-body{
-    padding-left: 0;
-    padding-right: 0;
+ 
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
 }
 .card-button{
     background-color: black;
+}
+a.btn{
+    background-color: #0f5132;
+    color:#bac854;
+}
+
+.jumbotron {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-bottom: 0;
+    background-color: #fff;
+}
+
+.jumbotron .container {
+    max-width: 40rem;
+}
+@media (min-width: 768px){
+    .jumbotron {
+        padding-top: calc(3rem* 2);
+        padding-bottom: calc(3rem * 2);
+    }
+}
+
+@media (min-width: 576px){
+    .jumbotron {
+        padding: 4rem 2rem;
+    }
 }

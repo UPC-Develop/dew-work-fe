@@ -1,40 +1,49 @@
 <main class="flex-shrink-0">
-    <div class="container mt-5 mb-5">
-        <h2 class="pb-2 border-bottom">Packs</h2>
+    <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">Ofertas</h1>
+          <p class="lead">Estas son las ofertas que tenemos para ti. Increibles descuentos en productos seleccionados y packs llenos de tus productos favoritos para que disfrutes junto a tu familia, amigos unos deliciosos snaks</p>
+        </div>
+    </section>
+    <div class="container mt-5 mb-5" id="descuentos">
+        <p class="pb-2 border-bottom lead fw-bold">Descuentos en tus productos favoritos</p>
         <div class="row g-4 py-5 row-cols-1 row-cols-lg-4">
-            <div class="col">
-                <img src="/assets/img/app/arma_tu_pack.png" class="d-block mx-lg-auto img-fluid rounded-3" alt="aboutus" width="300" height="100" loading="lazy">
-                <div class="col text-center mt-3">
-                    <a class="btn btn-dark" href="/product/pack">Comprar »</a>
-                </div>
-            </div>
-            <div class="col">
-                <img src="/assets/img/app/pack_cumple.png" class="d-block mx-lg-auto img-fluid rounded-3" alt="aboutus" width="300" height="100" loading="lazy">
-                <div class="col text-center mt-3">
-                    <a class="btn btn-dark" href="#">Comprar »</a>
+            <div *ngFor="let item of descuentos" class="col">
+                <div class="rounded-3 shadow-lg card-product">
+                    <img src="/assets/img/app/product/offers/{{item['codigo']}}.png" class="d-block mx-lg-auto img-fluid rounded-3" alt="{{item['descripcion']}}" width="300" height="100" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-text card-text--description">
+                            <p class="card-text fw-bold text-center" style="margin-bottom: 1rem;">{{item['descripcion']}}</p>
+                        </div>
+                        <div class="col text-center">
+                            <a class="btn" href="#">
+                            <img src="/assets/img/shopping-cart.svg" alt="shopping-cart" width="13">
+                            Comprar</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <h2 class="mt-5 pb-2 border-bottom">Descuentos imperdibles</h2>
+    </div>
+    <div class="container mt-5 mb-5" id="packs">
+        <p class="pb-2 border-bottom lead fw-bold">Arma tu pack y disfruta con los que más quieres</p>
         <div class="row g-4 py-5 row-cols-1 row-cols-lg-4">
-            <div class="col">
-                <img src="/assets/img/app/descuento_mani.png" class="d-block mx-lg-auto img-fluid rounded-3" alt="aboutus" width="300" height="100" loading="lazy">
-                <div class="col text-center mt-3">
-                    <a class="btn btn-dark" routerLink="/catalogue">Comprar »</a>
+            <div *ngFor="let item of packs">
+                <div class="rounded-3 shadow-lg card-product">
+                    <img src="/assets/img/app/product/offers/{{item['codigo']}}.png" class="d-block mx-lg-auto img-fluid rounded-3" alt="{{item['descripcion']}}" width="300" height="100" loading="lazy">
+                    <div class="card-body">
+                        <div class="card-text card-text--description">
+                            <p class="card-text fw-bold text-center mb-0">{{item['descripcion']}}</p>
+                            <p class="text-center fw-bold">S/ {{item['precio']}}</p>
+                        </div>
+                        <div class="col text-center">
+                            <a class="btn" href="#">
+                            <img src="/assets/img/shopping-cart.svg" alt="shopping-cart" width="13">
+                            Comprar</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="col">
-                <img src="/assets/img/app/descuento_trigo.png" class="d-block mx-lg-auto img-fluid rounded-3" alt="aboutus" width="300" height="100" loading="lazy">
-                <div class="col text-center mt-3">
-                    <a class="btn btn-dark" routerLink="/catalogue">Comprar »</a>
-                </div>
-            </div>
-            <div class="col">
-                <img src="/assets/img/app/descuento_papa.png" class="d-block mx-lg-auto img-fluid rounded-3" alt="aboutus" width="300" height="100" loading="lazy">
-                <div class="col text-center mt-3">
-                    <a class="btn btn-dark" routerLink="/catalogue">Comprar »</a>
-                </div>
-            </div>
+            </div> 
         </div>
     </div>
 </main>
