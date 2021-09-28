@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { ContactComponent } from './pages/contact/contact.component';
@@ -11,6 +14,7 @@ import { CatalogueComponent } from './pages/catalogue/catalogue.component';
 import { OfferComponent } from './pages/offer/offer.component';
 import { ProductComponent } from './pages/product/product.component';
 import { ShoppingCartComponent } from './pages/shopping-cart/shopping-cart.component';
+
 
 @NgModule({
   declarations: [
@@ -26,8 +30,10 @@ import { ShoppingCartComponent } from './pages/shopping-cart/shopping-cart.compo
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
-
+    AppRoutingModule,
+    HttpClientModule,
+    MatPaginatorModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
