@@ -17,7 +17,7 @@
         <div class="row row-cols-1 row-cols-sm-3 row-cols-md-4 g-4 pb-5">
             <div *ngFor="let product of pageSlice" class="col">
                 <div class="rounded-3 shadow-lg card-product">
-                  <img src="/assets/img/app/habas.png" class="d-block mx-lg-auto img-fluid rounded-3" alt="{{product['nombre']}}" width="300" height="100" loading="lazy">
+                  <img src="/assets/img/app/product/{{product['codigo']}}.png" class="d-block mx-lg-auto img-fluid rounded-3" alt="{{product['nombre']}}" width="300" height="100" loading="lazy">
                   <div class="card-body">
                     <div class="card-text card-text--description">
                         <p class="card-text fw-bold text-center mb-0">{{product['nombre']}}</p>
@@ -25,6 +25,7 @@
                         <p class="text-center fw-bold">S/ {{product['precio']}}</p>
                     </div>
                     <div class="col text-center">
+                     
                         <a class="btn" href="#">
                           <img src="/assets/img/shopping-cart.svg" alt="shopping-cart" width="13">
                           Comprar</a>

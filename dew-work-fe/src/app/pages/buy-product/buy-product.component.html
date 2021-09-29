@@ -1,210 +1,184 @@
 <br>
-<div>
-    <span class="title" style="text-align: center;">Checkout </span>
-</div>
+<div class="container">
+    <div class="title">
+        <h2>Orden de producto</h2>
+    </div>
+    <div class="d-flex">
+        <form action="" method="">
+            <label>
+            <span>Tipo Documento <span class="required">*</span></span>
+            <select name="tipdocumento" style="width: 250px;">
+              <option value="select">Select ...</option>
+               <option value="DNI">DNI</option>
+               <option value="CE">C.E.</option>
+            </select>
+          </label>
+            <label>
+          <span>Documento <span class="required">*</span></span>
+          <input type="text" name="documento" style="width: 250px;" maxlength="15px">
+        </label>
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-6">
-            <!-- Columna 1   -->
-            <h3>Detalles de facturación</h3>
+            <label>
+          <span class="fname">Nombres <span class="required">*</span></span>
+          <input type="text" name="nombres">
+        </label>
+            <label>
+          <span class="lname">Apellidos <span class="required">*</span></span>
+          <input type="text" name="apellidos">
+        </label>
+            <label>
+          <span>Pais <span class="required">*</span></span>
+          <select name="pais" style="width: 250px;">
+            <option value="select">Select a country...</option>
+             <option value="PER">Peru</option>
+          </select>
+        </label>
 
-            <div class="row" style="width: 49%; float: left">
-                <div class="row">
-                    <div class="form-group">
-                        <label>Tipo Documento:</label>
-                        <select class="form-control form-control-sm" style="height:35px; color: rgb(0,0,0);">
-                            <option value="0" selected="">DNI</option>
-                            <option value="1">C.E.</option>
-                        </select>
-                    </div>
-                </div>
+            <label>
+            <span>Provincia <span class="required">*</span></span>
+            <select name="provincia" style="width: 250px;">
+              <option value="select">Select ...</option>
+               <option value="LIM">Lima</option>
+               <option value="CAL">Callao</option>               
+            </select>
+        </label>
 
-                <div class="row">
-                    <div class="form-group">
-                        <br>
-                        <label>Nombre:</label>
-                        <input type="nombre" class="form-control" placeholder="Ingrese sus Nombres" style="width: 250px;" maxlength="20px">
-                        <br>
-                    </div>
-                </div>
+            <label>
+            <span>Distrito <span class="required">*</span></span>
+            <select name="distrito" style="width: 250px;">
+              <option value="select">Select ...</option>
+              <option value="1">Ate Vitarte</option>
+              <option value="2">Barranco</option>
+              <option value="3">Bellavista</option>
+              <option value="4">Breña</option>
+              <option value="5">Callao</option>
+              <option value="6">Carabayllo</option>
+              <option value="7">Carmen de La Legua-Reynoso</option>
+              <option value="8">Chaclacayo</option>
+              <option value="9">Chorrillos</option>
+              <option value="10">Cieneguilla</option>
+              <option value="11">Comas</option>
+              <option value="12">El Agustino</option>
+              <option value="13">Independencia</option>
+              <option value="14">Jesús María</option>
+              <option value="15">La Molina</option>
+              <option value="16">La Perla</option>
+              <option value="17">La Punta</option>
+              <option value="18">La Victoria</option>
+              <option value="19">Lima</option>
+              <option value="20">Lince</option>
+              <option value="21">Los Olivos</option>
+              <option value="22">Lurigancho</option>
+              <option value="23">Lurín</option>
+              <option value="24">Magdalena del Mar</option>
+              <option value="25">Mi Perú</option>
+              <option value="26">Miraflores</option>
+              <option value="27">Pachacamac</option>
+              <option value="28">Pucusana</option>
+              <option value="29">Pueblo Libre</option>
+              <option value="30">Puente Piedra</option>
+              <option value="31">Punta Hermosa</option>
+              <option value="32">Punta Negra</option>
+              <option value="33">Rímac</option>
+              <option value="34">San Bartolo</option>
+              <option value="35">San Borja</option>
+              <option value="36">San Isidro</option>
+              <option value="37">San Juan de Lurigancho</option>
+              <option value="38">San Juan de Miraflores</option>
+              <option value="39">San Luis</option>
+              <option value="40">San Martín de Porres</option>
+              <option value="41">San Miguel</option>
+              <option value="42">Santa Anita</option>
+              <option value="43">Santa María del Mar</option>
+              <option value="44">Santa Rosa</option>
+              <option value="45">Santiago de Surco</option>
+              <option value="46">Surquillo</option>
+              <option value="47">Ventanilla</option>
+              <option value="48">Villa El Salvador</option>
+              <option value="49">Villa María del Triunfo</option>  
+            </select>
+        </label>
+
+            <label>
+          <span>Direccion <span class="required">*</span></span>
+          <input type="text" name="direccion" placeholder="Ingrese su Dirección" required>
+        </label>
+            <label>
+          <span>&nbsp;</span>
+          <input type="text" name="apartment" placeholder="Apartamento / habitacion (opcional)">
+        </label>
+            <label>
+          <span>Telefono <span class="required">*</span></span>
+          <input type="telefono" name="city">
+        </label>
+            <label>
+          <span>Email<span class="required">*</span></span>
+          <input type="email" name="city" style="width: 200px;">
+        </label>
+        </form>
+        <div class="Yorder">
+            <table>
+                <tr>
+                    <th colspan="3">Your order</th>
+                </tr>
+                <tr>
+                    <td>Chifle Piurano 250gr.</td>
+                    <td>2</td>
+                    <td>15.60</td>
+                </tr>
+                <tr>
+                    <td>Camote Frito 500gr.</td>
+                    <td>1</td>
+                    <td>13.30</td>
+                </tr>
+                <tr>
+                    <td>Cancha Blanca 250gr.</td>
+                    <td>1</td>
+                    <td>3.80</td>
+                </tr>
+                <tr>
+                    <td>Pack cumpleañero
+                        <label>
+                          (Chifle Piurano 500gr, Papa Hojuela 500gr, Camote Frito 500gr, Chicarrón de Soya 250gr, Maní Dulce 250gr, Maní Salado 250gr, Habas Fritas 250gr)
+                        </label>
+                    </td>
+                    <td>1</td>
+                    <td>67.70</td>
+                </tr>
+            </table>
+            <div>
+                <table>
+                    <tr>
+                        <td colspan="3">Subtotal</td>
+                        <td colspan="3"> S/. 100.40</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Total</td>
+                        <td colspan="3">S/. 118.47</td>
+                    </tr>
+                </table>
             </div>
 
-            <div class="row" style="width: 49%; float: left">
-                <div class="col-lg-3">
-                    <div class="form-group">
-                        <label>Documento:</label>
-                        <input type="documento" class="form-control" placeholder="Ingrese su Documento" style="width: 250px;" maxlength="15px">
-                        <br>
-                    </div>
+            <table>
+                <div>
+                    <input type="radio" name="dbt" value="dbt" checked> Deposito
+
+                    <input type="radio" name="dbt" value="cd"> Yape
                 </div>
-
-                <div class="row">
-                    <div class="form-group">
-                        <label>Apellido:</label>
-                        <input type="apellido" class="form-control" placeholder="Ingrese sus Apellidos" style="width: 300px;" maxlength="50px">
-                        <br>
-                    </div>
+                <div>
+                    <input type="checkbox" name="terminos" value="cd"> He leído y estoy de acuerdo con los Términos y Condiciones de la web
                 </div>
-            </div>
-
-            <div class="row" style="width: 99%; float: left">
-
-                <div class="form-group">
-                    <label>País</label>
-                    <select class="form-control form-control-sm" style="height:35px; color: rgb(0,0,0);">
-                        <option value="0" selected="">PERU</option>
-                    </select>
-                    <br>
-                </div>
-
-                <div class="form-group">
-                    <label>Provincia</label>
-                    <select class="form-control form-control-sm" style="height:35px; color: rgb(0,0,0);">
-                        <option value="0" selected="">LIMA</option>
-                        <option value="1">CALLAO</option>
-                    </select>
-                    <br>
-                </div>
-
-                <div class="form-group">
-                    <label>Distrito</label>
-                    <select class="form-control form-control-sm" style="height:35px; color: rgb(0,0,0);">
-                        <option value="0" selected="">Ancón</option>
-                        <option value="1">Ate Vitarte</option>
-                        <option value="2">Barranco</option>
-                        <option value="3">Bellavista</option>
-                        <option value="4">Breña</option>
-                        <option value="5">Callao</option>
-                        <option value="6">Carabayllo</option>
-                        <option value="7">Carmen de La Legua-Reynoso</option>
-                        <option value="8">Chaclacayo</option>
-                        <option value="9">Chorrillos</option>
-                        <option value="10">Cieneguilla</option>
-                        <option value="11">Comas</option>
-                        <option value="12">El Agustino</option>
-                        <option value="13">Independencia</option>
-                        <option value="14">Jesús María</option>
-                        <option value="15">La Molina</option>
-                        <option value="16">La Perla</option>
-                        <option value="17">La Punta</option>
-                        <option value="18">La Victoria</option>
-                        <option value="19">Lima</option>
-                        <option value="20">Lince</option>
-                        <option value="21">Los Olivos</option>
-                        <option value="22">Lurigancho</option>
-                        <option value="23">Lurín</option>
-                        <option value="24">Magdalena del Mar</option>
-                        <option value="25">Mi Perú</option>
-                        <option value="26">Miraflores</option>
-                        <option value="27">Pachacamac</option>
-                        <option value="28">Pucusana</option>
-                        <option value="29">Pueblo Libre</option>
-                        <option value="30">Puente Piedra</option>
-                        <option value="31">Punta Hermosa</option>
-                        <option value="32">Punta Negra</option>
-                        <option value="33">Rímac</option>
-                        <option value="34">San Bartolo</option>
-                        <option value="35">San Borja</option>
-                        <option value="36">San Isidro</option>
-                        <option value="37">San Juan de Lurigancho</option>
-                        <option value="38">San Juan de Miraflores</option>
-                        <option value="39">San Luis</option>
-                        <option value="40">San Martín de Porres</option>
-                        <option value="41">San Miguel</option>
-                        <option value="42">Santa Anita</option>
-                        <option value="43">Santa María del Mar</option>
-                        <option value="44">Santa Rosa</option>
-                        <option value="45">Santiago de Surco</option>
-                        <option value="46">Surquillo</option>
-                        <option value="47">Ventanilla</option>
-                        <option value="48">Villa El Salvador</option>
-                        <option value="49">Villa María del Triunfo</option>                       
-                    </select>
-                    <br>
-                </div>
-
-                <div class="form-group">
-                    <label>Direccion:</label>
-                    <input type="text" class="form-control" placeholder="Ingrese su Dirección" style="width: 580px;" maxlength="50px">
-                    <br>
-                    <input type="text" class="form-control" placeholder="Apartamento / habitacion (opcional)" style="width: 580px;" maxlength="50px">
-                    <br>
-                </div>
-            </div>
-
-            <div class="row" style="width: 49%; float: left">
-                <div class="row">
-                    <div class="form-group">
-                        <label>Telefono:</label>
-                        <input type="telefono" class="form-control" placeholder="Ingrese su Telefono" style="width: 200px;" maxlength="20px">
-                        <br>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row" style="width: 49%; float: left">
-                <div class="col-lg-3">
-                    <div class="form-group">
-                        <label>Email:</label>
-                        <input type="email" required class="form-control" class="form-control" placeholder="Ingrese su email" style="width: 310px;" maxlength="50px">
-                        <br>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="col-lg-6">
-            <!-- Columna 2   -->
-            <h3>Su Orden</h3>
-            <table style="width:100%">
-                <tr style="border-width:1px">
-                    <th style="width:66%">Producto</th>
-                    <th style="width:15%">Cantidad</th>
-                    <th style="width:22%">Subtotal</th>
-                </tr>
-                <tr style="border-width:1px">
-                    <td>Fideos POP dulces</td>
-                    <td> <input type="number" class="form-control text-center" value="1" min="0"> </td>
-                    <td> S/. 2.5</td>
-                </tr>
-                <tr style="border-width:1px">
-                    <td>Papas en hojuelas</td>
-                    <td> <input type="number" class="form-control text-center" value="1" min="0"> </td>
-                    <td> S/. 3.5</td>
-                </tr>
-                <tr style="border-width:1px">
-                    <th>Subtotal</th>
-                    <th> </th>
-                    <th>S/. 5.0</th>
-                </tr>
-                <tr style="border-width:1px">
-                    <th>Total (incluido Impuestos)</th>
-                    <th> </th>
-                    <th>S/. 5.90</th>
-                </tr>
+                <button type="button">Realizar Orden</button>
             </table>
             <br>
-            <table style="width:100%">
-                <tr>
-                    <input type="radio" class="input-radio">&nbsp;
-                    <label>Deposito</label>
-                </tr>
-                <tr>
-                    <input type="radio" class="input-radio">&nbsp;
-                    <label>Yape</label>
-                </tr>
-                <br>
-                <tr>
-                    <input type="checkbox" class="iinput-checkbox">&nbsp;
-                    <span>He leído y estoy de acuerdo con los Términos y Condiciones de la web </span>
-                </tr>
-                <br>
-                <tr>
-                    <td><a href="#" class="btn btn-success btn-block"> REALIZAR EL PEDIDO</a></td>
-                </tr>
-            </table>
+            <!-- <p>
+            Realice su pago directamente en nuestra cuenta bancaria. Utilice su ID de pedido como referencia de pago. Su pedido no se enviará hasta que los fondos se hayan liquidado en nuestra cuenta.
+        </p> -->
+            <!-- <div>
+          <input type="radio" name="dbt" value="cd"> Yape
+        </div> -->
+
         </div>
+        <!-- Yorder -->
     </div>
 </div>
