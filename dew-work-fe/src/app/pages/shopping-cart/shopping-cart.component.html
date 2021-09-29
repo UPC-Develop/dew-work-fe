@@ -1,13 +1,14 @@
 <br>
-<div>
-    <span class="title">Bolsa de compras </span><span class="title-count">(2 productos)</span>
+<div class="container">
+    <strong class="title"><b>Bolsa de compras </b></strong><span class="title-count">(4 productos)</span>
 </div>
 
 <div class="container">
     <table id="cart" class="table table-hover table-condensed">
         <thead>
             <tr>
-                <th style="width:50%">Producto</th>
+                <th style="width:40%">Producto</th>
+                <th style="width:10%">Peso</th>
                 <th style="width:10%">Precio</th>
                 <th style="width:8%">Cantidad</th>
                 <th style="width:22%" class="text-center">Subtotal</th>
@@ -18,40 +19,79 @@
             <tr>
                 <td data-th="Product">
                     <div class="row">
-                        <div class="col-sm-2 hidden-xs"><img src="http://placehold.it/100x100" alt="..." class="img-responsive" /></div>
-                        <div class="col-sm-10">
-                            <h4 class="nomargin">Fideos POP dulces</h4>
-                            <p>Fideos POP endulzados, un snack tradicional que te hara recordar bellos momentos de tu infancia.</p>
+                        <div class="col-sm-2 hidden-xs"><img src="/assets/img/app/chifles_piuranos.png" width="100" height="100" class="img-responsive" /></div>
+                        <div class="col-sm-12">
+                            <h4 class="nomargin">Chifles Piuranos</h4>
                         </div>
                     </div>
                 </td>
-                <td data-th="Price">S/. 2.50</td>
+                <td data-th="Quantity">250 g</td>
+                <td data-th="Price">S/ 7.80</td>
                 <td data-th="Quantity">
-                    <input type="number" class="form-control text-center" value="1">
+                    <input type="number" class="form-control text-center" value="2">
                 </td>
-                <td data-th="Subtotal" class="text-center">S/. 2.50</td>
+                <td data-th="Subtotal" class="text-center">S/ 15.60</td>
                 <td class="actions" data-th="">
                     <button class="btn btn-info btn-sm"><i class="bi bi-arrow-repeat"></i></button>
-                    <button class="btn btn-danger btn-sm"><i class="bi bi-trash"></i>
-        </button>
+                    <button class="btn btn-danger btn-sm"><i class="bi bi-trash"></i></button>
                 </td>
             </tr>
             <tr>
                 <td data-th="Product">
                     <div class="row">
-                        <div class="col-sm-2 hidden-xs"><img src="http://placehold.it/100x100" alt="..." class="img-responsive" /></div>
-                        <div class="col-sm-10">
-                            <h4 class="nomargin">Papas en hojuelas</h4>
-                            <p>Los peruanos somos paperos por naturaleza, nuestras crujientes papas se volveran tus favoritas.
-                            </p>
+                        <div class="col-sm-2 hidden-xs"><img src="/assets/img/app/camotes_fritos.png" width="100" height="100" class="img-responsive" /></div>
+                        <div class="col-sm-12">
+                            <h4 class="nomargin">Camote Frito</h4>
                         </div>
                     </div>
                 </td>
-                <td data-th="Price">S/. 3.50</td>
+                <td data-th="Quantity">500 g</td>
+                <td data-th="Price">S/ 13.30</td>
                 <td data-th="Quantity">
                     <input type="number" class="form-control text-center" value="1">
                 </td>
-                <td data-th="Subtotal" class="text-center">S/. 3.50</td>
+                <td data-th="Subtotal" class="text-center">S/ 13.30</td>
+                <td class="actions" data-th="">
+                    <button class="btn btn-info btn-sm"><i class="bi bi-arrow-repeat"></i></button>
+                    <button class="btn btn-danger btn-sm"><i class="bi bi-trash"></i></button>
+                </td>
+            </tr>
+
+            <tr>
+                <td data-th="Product">
+                    <div class="row">
+                        <div class="col-sm-2 hidden-xs"><img src="/assets/img/app/cancha_blanca.png" width="100" height="100" class="img-responsive" /></div>
+                        <div class="col-sm-12">
+                            <h4 class="nomargin">Cancha Blanca</h4>
+                        </div>
+                    </div>
+                </td>
+                <td data-th="Quantity">250 g</td>
+                <td data-th="Price">S/ 3.80</td>
+                <td data-th="Quantity">
+                    <input type="number" class="form-control text-center" value="1">
+                </td>
+                <td data-th="Subtotal" class="text-center">S/ 3.80</td>
+                <td class="actions" data-th="">
+                    <button class="btn btn-info btn-sm"><i class="bi bi-arrow-repeat"></i></button>
+                    <button class="btn btn-danger btn-sm"><i class="bi bi-trash"></i></button>
+                </td>
+            </tr>
+            <tr>
+                <td data-th="Product">
+                    <div class="row">
+                        <div class="col-sm-2 hidden-xs"><img src="/assets/img/app/product/offers/P000000001.png" width="100" height="100" class="img-responsive" /></div>
+                        <div class="col-sm-12">
+                            <h4 class="nomargin">Pack Cumpleañero</h4>
+                        </div>
+                    </div>
+                </td>
+                <td data-th="Quantity"></td>
+                <td data-th="Price">S/ 67.70</td>
+                <td data-th="Quantity">
+                    <input type="number" class="form-control text-center" value="1">
+                </td>
+                <td data-th="Subtotal" class="text-center">S/ 67.70</td>
                 <td class="actions" data-th="">
                     <button class="btn btn-info btn-sm"><i class="bi bi-arrow-repeat"></i></button>
                     <button class="btn btn-danger btn-sm"><i class="bi bi-trash"></i></button>
@@ -60,12 +100,12 @@
         </tbody>
         <tfoot>
             <tr class="visible-xs">
-                <td class="text-center"><strong>Total S/. 6.00</strong></td>
+                <td class="text-center"><strong>Total S/. 100.40</strong></td>
             </tr>
             <tr>
-                <td><a href="#" class="btn btn-warning"><i class="fa fa-angle-left"></i>Seguir comprando</a></td>
+                <td><a href="catalogue" class="btn btn-warning"><i class="fa fa-angle-left"></i>Seguir comprando</a></td>
                 <td colspan="2" class="hidden-xs"></td>
-                <td class="hidden-xs text-center"><strong>Total S/. 6.00</strong></td>
+                <td class="hidden-xs text-center"><strong>Total S/. 100.40</strong></td>
                 <td><a href="buy-product" class="btn btn-success btn-block">Pagar<i class="fa fa-angle-right"></i></a></td>
             </tr>
         </tfoot>
